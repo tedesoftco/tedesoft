@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/O3gOgPB4sRU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\"row-1 position-relative vh-100\" style=\"background-color: rgba(252, 173, 127, 0.521)\">\n        <div class=\"row align-self-center w-100\">\n            <div class=\"col-12 mt-lg-5 text-center align-middle\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\">\n        <h2 class=\"text-white display-3\">Contacto</h2>\n    </div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <img src=\"https://source.unsplash.com/JYGnB9gTCls/400x600\" class=\"img-fluid\" alt=\"Contacto TedeSoft\">\n        </div>\n        <div class=\"col-8\">\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"formGroupExampleInput\">Nombres</label>\n                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"Santiago Peréz\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlInput1\">Correo electrónico</label>\n                    <input type=\"email\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"nombre@ejemplo.com\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"formGroupExampleInput\">Telefono</label>\n                    <input type=\"tel\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"3129999999\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlTextarea1\">Comentario</label>\n                    <textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>\n                </div>\n                <button type=\"button\" class=\"btn btn-success\">Enviar</button>\n            </form>\n        </div>\n    </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/O3gOgPB4sRU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\"row-1 position-relative vh-100\" style=\"background-color: rgba(252, 173, 127, 0.521)\">\n        <div class=\"row align-self-center w-100\">\n            <div class=\"col-12 mt-lg-5 text-center align-middle\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\">\n        <h2 class=\"text-white display-3\">Contacto</h2>\n    </div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-4 d-none d-sm-block\">\n            <img src=\"https://source.unsplash.com/JYGnB9gTCls/400x600\" class=\"img-fluid\" alt=\"Contacto TedeSoft\">\n        </div>\n        <div class=\"col-12 col-sm-8\">\n            <form [formGroup]=\"formContac\" (ngSubmit)=\"EnviarContacto()\">\n                <div class=\"form-group\">\n                    <label for=\"nombres\">Nombres</label>\n                    <input type=\"text\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.nombres.errors }\" formControlName=\"nombres\" id=\"nombres\" placeholder=\"Santiago Peréz\">\n                </div>\n                <div class=\"form-group\" [ngClass]=\"{'is-invalid':(formContac.get('email').touched || formContac.get('email').dirty)}\">\n                    <label for=\"email\">Correo electrónico</label>\n                    <input type=\"email\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.email.errors }\" formControlName=\"email\" id=\"email\" placeholder=\"nombre@ejemplo.com\">\n                </div>\n                <div class=\"form-group\" [ngClass]=\"{'is-invalid':(formContac.get('telefono').touched || formContac.get('telefono').dirty)}\">\n                    <label for=\"telefono\">Telefono</label>\n                    <input type=\"tel\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.telefono.errors }\" formControlName=\"telefono\" id=\"telefono\" placeholder=\"3129999999\">\n                </div>\n                <div class=\"form-group\" [ngClass]=\"{'is-invalid':(formContac.get('observaciones').touched || formContac.get('observaciones').dirty)}\">\n                    <label for=\"observaciones\">Comentario</label>\n                    <textarea class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.observaciones.errors }\" formControlName=\"observaciones\" id=\"observaciones\" rows=\"3\"></textarea>\n                </div>\n                <div class=\"form-check\">\n                    <input class=\"form-check-input\" [ngClass]=\"{ 'is-invalid': submitted && f.aceptoContacto.errors }\" formControlName=\"aceptoContacto\" type=\"checkbox\" value=\"\" id=\"aceptocontacto\">\n                    <label class=\"form-check-label\" for=\"aceptocontacto\">\n                          Acepto que se pongan en contacto conmigo\n                        </label>\n                </div>\n                <br>\n                <div class=\"form-group text-right\">\n                    <button type=\"submit\" class=\"btn btn-success\">Enviar</button>\n                    <!-- <button type=\"submit\" [disabled]=\"!formContac.valid\" class=\"btn btn-success\">Enviar</button> -->\n                </div>\n            </form>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -691,15 +691,25 @@ let ContactComponent = class ContactComponent {
     constructor(contactoService, formContacto) {
         this.contactoService = contactoService;
         this.formContacto = formContacto;
-        this.formAlquiler = this.formContacto.group({
-            nombres: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](''),
-            telefono: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
-            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
-            observaciones: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
-            aceptoContacto: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required)
-        });
+        this.submitted = false;
     }
+    EnviarContacto() {
+        this.submitted = true;
+        if (this.formContac.invalid) {
+            return;
+        }
+        console.log(this.formContac);
+        console.log(this.formContac.value);
+    }
+    get f() { return this.formContac.controls; }
     ngOnInit() {
+        this.formContac = this.formContacto.group({
+            nombres: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].minLength(6)]],
+            telefono: [''],
+            email: ['', [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].email]],
+            observaciones: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required],
+            aceptoContacto: [false, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].requiredTrue]
+        });
     }
 };
 ContactComponent.ctorParameters = () => [
