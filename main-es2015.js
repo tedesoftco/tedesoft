@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Footer -->\n<footer class=\"container py-5\">\n    <div class=\"row\">\n        <div class=\"col-12 col-md\">\n            <h5>Que hacemos</h5>\n            <ul class=\"list-unstyled text-small\">\n                <li><a class=\"text-muted\" href=\"#\">Software</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Internet de las cosas</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Consultoría</a></li>\n                <!-- <li><a class=\"text-muted\" href=\"#\">Stuff for developers</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Another one</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Last time</a></li> -->\n            </ul>\n        </div>\n        <div class=\"col-12 col-md\">\n            <h5>Nosotros</h5>\n            <ul class=\"list-unstyled text-small\">\n                <li><a class=\"text-muted\" href=\"#\">Equipo</a></li>\n                <!-- <li><a class=\"text-muted\" href=\"#\">Locations</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Privacy</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Terms</a></li> -->\n            </ul>\n        </div>\n        <div class=\"col-12 col-md\">\n            <h5>Contacto</h5>\n            <ul class=\"list-unstyled text-small\">\n            <li>Correo electronico: <a href=\"mailto:contacto@tedesoft.com?subject=Contacto\">contacto@tedesoft.com</a></li>\n            <li>Dirección: Calle 10A # 11 - 60, Funza - Cundinamarca</li>\n            </ul>\n        </div>\n    </div>\n    <hr>\n    <div class=\"mx-auto text-center\">\n        <ul class=\"list-inline align-content-center\">\n            <li class=\"list-inline-item\">\n                <img src=\"./assets/logo.svg\" width=\"30\" alt=\"TedeSoft SAS\" /> TedeSoft SAS 2019 - Todos los derechos resevados</li>\n            <li class=\"list-inline-item\">Demo Images: <a href=\"http://unsplash.com\">Unsplash</a></li>\n        </ul>\n    </div>\n</footer>\n<!-- Footer -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Footer -->\n<footer class=\"container py-5\">\n    <div class=\"row\">\n        <div class=\"col-12 col-md\">\n            <h5>Que hacemos</h5>\n            <ul class=\"list-unstyled text-small\">\n                <li><a class=\"text-muted\" href=\"#\">Software</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Internet de las cosas</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Consultoría</a></li>\n                <!-- <li><a class=\"text-muted\" href=\"#\">Stuff for developers</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Another one</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Last time</a></li> -->\n            </ul>\n        </div>\n        <div class=\"col-12 col-md\">\n            <h5>Nosotros</h5>\n            <ul class=\"list-unstyled text-small\">\n                <li><a class=\"text-muted\" href=\"#\">Equipo</a></li>\n                <!-- <li><a class=\"text-muted\" href=\"#\">Locations</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Privacy</a></li>\n                <li><a class=\"text-muted\" href=\"#\">Terms</a></li> -->\n            </ul>\n        </div>\n        <div class=\"col-12 col-md\">\n            <h5>Contacto</h5>\n            <ul class=\"list-unstyled text-small\">\n                <li>Correo electronico: <a href=\"mailto:{{_servicio.info.correocontacto}}?subject=Contacto\">{{_servicio.info.correocontacto}}</a></li>\n                <li>Dirección: {{_servicio.info.direccion}} </li>\n            </ul>\n        </div>\n    </div>\n    <hr>\n    <div class=\"mx-auto text-center\">\n        <ul class=\"list-inline align-content-center\">\n            <li class=\"list-inline-item\">\n                <img src=\"./assets/img/logo.svg\" width=\"30\" alt=\"TedeSoft SAS\" /> TedeSoft SAS {{anio}} - Todos los derechos resevados</li>\n            <li class=\"list-inline-item\">Demo Images: <a href=\"http://unsplash.com\">Unsplash</a></li>\n        </ul>\n    </div>\n</footer>\n<!-- Footer -->");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav [ngClass]=\"{'pass': cambio == true}\" class=\"navbar navbar-light navbar-expand-lg navbar-custom shadow p-3 mb-5\">\n    <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"./assets/LogoCompleto.svg\" width=\"200\" height=\"50\" alt=\"\">\n    </a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n        <ul class=\"navbar-nav m-auto h5\">\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\"  [routerLinkActiveOptions]=\"{ exact: true }\">\n                <a [routerLink]=\"'/home'\" class=\"nav-link\" href=\"#\">Inicio</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/equipo'\" class=\"nav-link\" href=\"#\">Equipo</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/conozcanos'\" class=\"nav-link\" href=\"#\">Conózcanos</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/contacto'\" class=\"nav-link\" href=\"#\">Contacto</a>\n            </li>\n        </ul>\n        <!-- <form class=\"form-inline my-2 my-lg-0\">\n        <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n      </form> -->\n    </div>\n</nav>");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav [ngClass]=\"{'pass': cambio == true}\" class=\"navbar navbar-light navbar-expand-lg navbar-custom shadow p-3 mb-5\">\n    <a class=\"navbar-brand\" href=\"#\">\n        <img src=\"./assets/img/LogoCompleto.svg\" width=\"200\" height=\"50\" alt=\"\">\n    </a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n        <ul class=\"navbar-nav m-auto h5\">\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\" [routerLinkActiveOptions]=\"{ exact: true }\">\n                <a [routerLink]=\"'/'\" class=\"nav-link\" href=\"#\">Inicio</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/equipo'\" class=\"nav-link\" href=\"#\">Equipo</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/conozcanos'\" class=\"nav-link\" href=\"#\">Conózcanos</a>\n            </li>\n            <li class=\"nav-item\" [routerLinkActive]=\"['active']\">\n                <a [routerLink]=\"'/contacto'\" class=\"nav-link\" href=\"#\">Contacto</a>\n            </li>\n        </ul>\n        <!-- <form class=\"form-inline my-2 my-lg-0\">\n        <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\n        <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button>\n      </form> -->\n    </div>\n</nav>");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/XkKCui44iM0/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\" row-1 position-relative vh-100\" style=\"background-color: rgba(156, 238, 170, 0.521)\">\n        <div class=\"row\">\n            <div class=\"col-12 mt-lg-5\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\"><h2 class=\"text-white display-3\">Conózcanos</h2></div>\n</div>\n\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/XkKCui44iM0/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\" row-1 position-relative vh-100\" style=\"background-color: rgba(156, 238, 170, 0.521)\">\n        <div class=\"row\">\n            <div class=\"col-12 mt-lg-5\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\">\n        <h2 class=\"text-white display-3\">Conózcanos</h2>\n    </div>\n</div>\n\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/O3gOgPB4sRU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\"row-1 position-relative vh-100\" style=\"background-color: rgba(252, 173, 127, 0.521)\">\n        <div class=\"row align-self-center w-100\">\n            <div class=\"col-12 mt-lg-5 text-center align-middle\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\"><h2 class=\"text-white display-3\">Contacto</h2></div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n  \n\n<script id=\"bx24_form_inline\" data-skip-moving=\"true\">\n        (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;\n                (w[b].forms=w[b].forms||[]).push(arguments[0])};\n                if(w[b]['forms']) return;\n                var s=d.createElement('script');s.async=1;s.src=u+'?'+(1*new Date());\n                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);\n        })(window,document,'https://tedesoft.bitrix24.es/bitrix/js/crm/form_loader.js','b24form');\n\n        b24form({\"id\":\"2\",\"lang\":\"la\",\"sec\":\"gco1fw\",\"type\":\"inline\"});\n</script> ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/O3gOgPB4sRU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\"row-1 position-relative vh-100\" style=\"background-color: rgba(252, 173, 127, 0.521)\">\n        <div class=\"row align-self-center w-100\">\n            <div class=\"col-12 mt-lg-5 text-center align-middle\">\n            </div>\n        </div>\n    </div>\n    <div class=\"centered\">\n        <h2 class=\"text-white display-3\">Contacto</h2>\n    </div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n\n<div class=\"container\">\n    <div class=\"row\">\n        <div class=\"col-4\">\n            <img src=\"https://source.unsplash.com/JYGnB9gTCls/400x600\" class=\"img-fluid\" alt=\"Contacto TedeSoft\">\n        </div>\n        <div class=\"col-8\">\n            <form>\n                <div class=\"form-group\">\n                    <label for=\"formGroupExampleInput\">Nombres</label>\n                    <input type=\"text\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"Santiago Peréz\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlInput1\">Correo electrónico</label>\n                    <input type=\"email\" class=\"form-control\" id=\"exampleFormControlInput1\" placeholder=\"nombre@ejemplo.com\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"formGroupExampleInput\">Telefono</label>\n                    <input type=\"tel\" class=\"form-control\" id=\"formGroupExampleInput\" placeholder=\"3129999999\">\n                </div>\n                <div class=\"form-group\">\n                    <label for=\"exampleFormControlTextarea1\">Comentario</label>\n                    <textarea class=\"form-control\" id=\"exampleFormControlTextarea1\" rows=\"3\"></textarea>\n                </div>\n                <button type=\"button\" class=\"btn btn-success\">Enviar</button>\n            </form>\n        </div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/hpjSkU2UYSU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\" row-1 position-relative vh-100\" style=\"background-color: rgba(156, 178, 238, 0.521)\">\n        <div class=\"row\">\n            <div class=\"col-12 mt-lg-5 centered\">\n                <img src=\"./assets/LogoCompleto.svg\" class=\"vh-100 img-fluid\" width=\"400\" alt=\"TedeSoft\">\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n\n<div class=\"container\">\n    <div class=\"card-deck\">\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/Px3iBXV-4TU/800x800\" class=\"card-img-top\" alt=\"Desarrollo Web\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Desarrollo Web</h5>\n                <p class=\"card-text\">Desarrollo de páginas web y portales intranet a la medida para facilitar el trabajo dentro de su organización</p>\n            </div>\n        </div>\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/fwEwcQGkD1w/800x800\" class=\"card-img-top\" alt=\"Internet de las cosas\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Internet de las cosas</h5>\n                <p class=\"card-text\">Desarrollo de dispositivos inteligentes que se conectan a internet para mejorar los procesos de su organización</p>\n            </div>\n        </div>\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/wD1LRb9OeEo/800x800\" class=\"card-img-top\" alt=\"\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Consultoría</h5>\n                <p class=\"card-text\">Le ayudamos a tomar la mejor solución tecnológica para su empresa</p>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"pt-lg-5\"></div>\n<hr class=\"h-100\">");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"row-1 vh-100\">\n    <img src=\"https://source.unsplash.com/hpjSkU2UYSU/1600x900\" class=\"img-fluid position-absolute position-relative vw-100 vh-100\" alt=\"TedeSoft\">\n    <div class=\" row-1 position-relative vh-100\" style=\"background-color: rgba(156, 178, 238, 0.521)\">\n        <div class=\"row\">\n            <div class=\"col-12 mt-lg-5 centered\">\n                <img src=\"./assets/img/LogoCompleto.svg\" class=\"vh-100 img-fluid\" width=\"400\" alt=\"TedeSoft\">\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"pt-5 pt-lg-5\"></div>\n<div class=\"pt-5 pt-lg-5\"></div>\n\n<div class=\"container\">\n    <div class=\"card-deck\">\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/Px3iBXV-4TU/400x400\" class=\"card-img-top\" alt=\"Desarrollo Web\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Desarrollo Web</h5>\n                <p class=\"card-text\">Desarrollo de páginas web y portales intranet a la medida para facilitar el trabajo dentro de su organización</p>\n            </div>\n        </div>\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/fwEwcQGkD1w/800x800\" class=\"card-img-top\" alt=\"Internet de las cosas\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Internet de las cosas</h5>\n                <p class=\"card-text\">Desarrollo de dispositivos inteligentes que se conectan a internet para mejorar los procesos de su organización</p>\n            </div>\n        </div>\n        <div class=\"card\">\n            <img src=\"https://source.unsplash.com/wD1LRb9OeEo/800x800\" class=\"card-img-top\" alt=\"\">\n            <div class=\"card-body\">\n                <h5 class=\"card-title\">Consultoría</h5>\n                <p class=\"card-text\">Le ayudamos a tomar la mejor solución tecnológica para su empresa</p>\n            </div>\n        </div>\n    </div>\n</div>\n\n<div class=\"pt-lg-5\"></div>\n<hr class=\"h-100\">");
 
 /***/ }),
 
@@ -368,17 +368,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: 'home', component: _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_3__["InicioComponent"] },
+    { path: '', component: _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_3__["InicioComponent"] },
     { path: 'equipo', component: _pages_team_team_component__WEBPACK_IMPORTED_MODULE_4__["TeamComponent"] },
     { path: 'contacto', component: _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_5__["ContactComponent"] },
     { path: 'conozcanos', component: _pages_about_about_component__WEBPACK_IMPORTED_MODULE_6__["AboutComponent"] },
-    { path: '**', redirectTo: 'home' }
+    { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes, { useHash: true })],
         exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
     })
 ], AppRoutingModule);
@@ -412,13 +412,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_info_pagina_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./services/info-pagina.service */ "./src/app/services/info-pagina.service.ts");
+
 
 
 let AppComponent = class AppComponent {
-    constructor() {
-        this.title = 'SiteTedeSoftAngular';
+    constructor(infoPagina) {
+        this.infoPagina = infoPagina;
     }
 };
+AppComponent.ctorParameters = () => [
+    { type: _services_info_pagina_service__WEBPACK_IMPORTED_MODULE_2__["InfoPaginaService"] }
+];
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-root',
@@ -444,14 +449,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _layout_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./layout/navbar/navbar.component */ "./src/app/layout/navbar/navbar.component.ts");
-/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
-/* harmony import */ var _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/inicio/inicio.component */ "./src/app/pages/inicio/inicio.component.ts");
-/* harmony import */ var _pages_team_team_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/team/team.component */ "./src/app/pages/team/team.component.ts");
-/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
-/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _layout_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./layout/navbar/navbar.component */ "./src/app/layout/navbar/navbar.component.ts");
+/* harmony import */ var _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./layout/footer/footer.component */ "./src/app/layout/footer/footer.component.ts");
+/* harmony import */ var _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/inicio/inicio.component */ "./src/app/pages/inicio/inicio.component.ts");
+/* harmony import */ var _pages_team_team_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/team/team.component */ "./src/app/pages/team/team.component.ts");
+/* harmony import */ var _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/contact/contact.component */ "./src/app/pages/contact/contact.component.ts");
+/* harmony import */ var _pages_about_about_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/about/about.component */ "./src/app/pages/about/about.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
 
 
 
@@ -468,20 +477,23 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-            _layout_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_5__["NavbarComponent"],
-            _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"],
-            _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_7__["InicioComponent"],
-            _pages_team_team_component__WEBPACK_IMPORTED_MODULE_8__["TeamComponent"],
-            _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_9__["ContactComponent"],
-            _pages_about_about_component__WEBPACK_IMPORTED_MODULE_10__["AboutComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
+            _layout_navbar_navbar_component__WEBPACK_IMPORTED_MODULE_6__["NavbarComponent"],
+            _layout_footer_footer_component__WEBPACK_IMPORTED_MODULE_7__["FooterComponent"],
+            _pages_inicio_inicio_component__WEBPACK_IMPORTED_MODULE_8__["InicioComponent"],
+            _pages_team_team_component__WEBPACK_IMPORTED_MODULE_9__["TeamComponent"],
+            _pages_contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"],
+            _pages_about_about_component__WEBPACK_IMPORTED_MODULE_11__["AboutComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"]
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })
 ], AppModule);
 
@@ -514,13 +526,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_info_pagina_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/info-pagina.service */ "./src/app/services/info-pagina.service.ts");
+
 
 
 let FooterComponent = class FooterComponent {
-    constructor() { }
+    constructor(_servicio) {
+        this._servicio = _servicio;
+        this.anio = new Date().getFullYear();
+    }
     ngOnInit() {
     }
 };
+FooterComponent.ctorParameters = () => [
+    { type: _services_info_pagina_service__WEBPACK_IMPORTED_MODULE_2__["InfoPaginaService"] }
+];
 FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-footer',
@@ -661,13 +681,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactComponent", function() { return ContactComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _services_contacto_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../services/contacto.service */ "./src/app/services/contacto.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
 
 
 let ContactComponent = class ContactComponent {
-    constructor() { }
+    constructor(contactoService, formContacto) {
+        this.contactoService = contactoService;
+        this.formContacto = formContacto;
+        this.formAlquiler = this.formContacto.group({
+            nombres: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"](''),
+            telefono: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            email: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            observaciones: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required),
+            aceptoContacto: new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]('', _angular_forms__WEBPACK_IMPORTED_MODULE_3__["Validators"].required)
+        });
+    }
     ngOnInit() {
     }
 };
+ContactComponent.ctorParameters = () => [
+    { type: _services_contacto_service__WEBPACK_IMPORTED_MODULE_2__["ContactoService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] }
+];
 ContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-contact',
@@ -763,6 +801,76 @@ TeamComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./team.component.css */ "./src/app/pages/team/team.component.css")).default]
     })
 ], TeamComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/contacto.service.ts":
+/*!**********************************************!*\
+  !*** ./src/app/services/contacto.service.ts ***!
+  \**********************************************/
+/*! exports provided: ContactoService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactoService", function() { return ContactoService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ContactoService = class ContactoService {
+    constructor() {
+        console.log('Servicio de contacto');
+    }
+};
+ContactoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ContactoService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/info-pagina.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/services/info-pagina.service.ts ***!
+  \*************************************************/
+/*! exports provided: InfoPaginaService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InfoPaginaService", function() { return InfoPaginaService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let InfoPaginaService = class InfoPaginaService {
+    constructor(http) {
+        this.http = http;
+        this.info = {};
+        this.cargada = false;
+        this.http.get('assets/data/data_pagina.json')
+            .subscribe((data) => {
+            this.cargada = true;
+            this.info = data;
+        });
+    }
+};
+InfoPaginaService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+InfoPaginaService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], InfoPaginaService);
 
 
 
