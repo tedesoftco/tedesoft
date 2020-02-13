@@ -1,5 +1,10 @@
 {
     "correocontacto": "contacto@tedesoft.com",
     "direccion": "Calle 10A # 11 - 60, Funza - Cundinamarca",
-    "facebook": "https://www.facebook.com/tedesoft.co/"
+    "facebook": "https://www.facebook.com/tedesoft.co/",
+    "Servicios": [{
+        "titulo": "Desarrollo de paginas web",
+        "descripcion": "Contamos con la experiencia e desarrollo de portales web e intranet, los cuales le ayudan a mejorar su organizaciòn",
+        "imagen": "teeteh"
+    }]
 }
